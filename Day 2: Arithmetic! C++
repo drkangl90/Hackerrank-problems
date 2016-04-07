@@ -1,0 +1,33 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+double finalPrice, frac;
+
+bool check(int f){
+    frac = finalPrice - f;
+    if (frac >= .5) return true;
+    return false;
+}
+
+int main() {
+    double M;
+    int T, X;
+    cin >> M >> T >> X;
+    double tip = (M * T) / 100;
+    double tax = (M * X) / 100;
+    finalPrice = M + tip + tax;
+    if (check(finalPrice)){
+        finalPrice -= frac;
+        finalPrice += 1;
+        std::cout << "The final price of the meal is $" << finalPrice << "." << std::endl;  
+    }
+    else {
+        finalPrice -= frac;
+        std::cout << "The final price of the meal is $" << finalPrice << "." << std::endl;  
+    }
+    return 0;
+}
