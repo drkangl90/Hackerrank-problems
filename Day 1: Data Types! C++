@@ -1,0 +1,20 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    std::cout << "Primitive : double" << std::endl;
+    std::cout << "Primitive : char" << std::endl;
+    std::cout << "Primitive : boolean" << std::endl;
+    std::cout << "Primitive : int" << std::endl;
+    std::cout << "Referenced : String" << std::endl;
+    std::cout << "Primitive : boolean" << std::endl;
+    std::cout << "Primitive : double" << std::endl;
+    std::cout << "Primitive : char" << std::endl;
+    std::cout << "Referenced : String" << std::endl;
+    return 0;
+}
